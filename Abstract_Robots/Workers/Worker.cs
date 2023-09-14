@@ -28,7 +28,7 @@ namespace Robots_inc
 
         public void SetPassword(string password) { this.password = password; }
 
-        public abstract int calcSalary();
+        public abstract double calcSalary();
 
         public override string ToString()
         {
