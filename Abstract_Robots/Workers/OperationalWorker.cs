@@ -17,6 +17,11 @@ namespace Robots_inc
             this.Hours = hours;
         }
 
+        public int GetHours() { return this.Hours; }
+        public double GetMoneyPerHour() { return this.MoneyPerHour; }
+        public void SetHours(int Hours) { this.Hours = Hours; }
+        public void SetMoneyPerHour(int MoneyPerHour) { this.MoneyPerHour = MoneyPerHour; }
+
         public override double calcSalary()
         {
             return MoneyPerHour * Hours;
