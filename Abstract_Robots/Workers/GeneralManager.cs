@@ -17,6 +17,12 @@ namespace Robots_inc
             WorkingRobots = 0;
         }
 
+        public GeneralManager(string name, string id, DateTime bDate, string pass, double monthlySalary, int workingRobots)
+            : base(name, id, bDate, pass)
+        {
+            this.monthlySalary = monthlySalary;
+            this.WorkingRobots = workingRobots;
+        }
         public int GetWorkingRobots() { return this.WorkingRobots; }
         public double GetMonthlySalary() { return this.monthlySalary; }
         public void SetWorkingRobots(int workingRobots) { this.WorkingRobots = workingRobots; }
@@ -24,7 +30,7 @@ namespace Robots_inc
 
         public override double calcSalary()
         {
-            if(WorkingRobots >= 15)
+            if(WorkingRobots >= 30)
                 return monthlySalary + monthlySalary*0.15;
             return monthlySalary;
         }

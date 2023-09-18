@@ -19,7 +19,7 @@ namespace Robots_inc
     /// </summary>
     public partial class WndCreateRobot : Window
     {
-        public WndCreateRobot()
+        public WndCreateRobot(): base()
         {
             InitializeComponent();
         }

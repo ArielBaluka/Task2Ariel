@@ -19,6 +19,14 @@ namespace Robots_inc
             this.SuccessfulMissions = 0;
         }
 
+        public OperationManager(string name, string id, DateTime bDate, string pass, double MoneyPerHour, int hours, int successfulMissions)
+            : base(name, id, bDate, pass)
+        {
+            this.MoneyPerHour = MoneyPerHour;
+            this.Hours = hours;
+            this.SuccessfulMissions = successfulMissions;
+        }
+
         public int GetHours() { return this.Hours; }
         public double GetMoneyPerHour() { return this.MoneyPerHour; }
         public double GetSuccessfulMissions() { return this.SuccessfulMissions; }
