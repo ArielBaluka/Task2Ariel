@@ -29,6 +29,7 @@ namespace Robots_inc
             InitializeComponent();
             GatherTeam();
             CreateRobots();
+            CreateMissionList();
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -43,7 +44,7 @@ namespace Robots_inc
 
             workers.Add(new GeneralManager("Moshiko", "22222221", DateTime.Parse("06/09/1969"), "imCoolBoy12#", 100000000000000000));
             workers.Add(new OperationManager("moshe", "11111112", DateTime.Parse("1/4/1994"), "eldadyBoy12", 10000, 400));
-            workers.Add(new OperationManager("moshik", "12112112", DateTime.Parse("7/8/1984"), "ELDADDDD1212", 10000, 400));
+            workers.Add(new OperationManager("moshik", "12112112", DateTime.Parse("9/21/1984"), "ELDADDDD1212", 10000, 400));
             workers.Add(new OperationalWorker("Yosef", "11111111", DateTime.Parse("1/1/1991"), "eldadIsEldad1", 10, 1000));
             workers.Add(new OperationalWorker("Bob", "1123411", DateTime.Parse("1/2/1981"), "SismaEldad", 10, 1000));
             workers.Add(new OperationalWorker("Omer", "33221123", DateTime.Parse("8/11/1981"), "PAssEldad111", 10, 1000));
